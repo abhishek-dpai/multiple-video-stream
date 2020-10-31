@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+.box {
+  display: flex;
+  justify-content: space-around;
+}
 .container {
   display: flex;
   position: static;
@@ -11,10 +15,18 @@
   height: 100%;
 }
 .video {
-  height: 500px;
-  width: 700px;
+  width: 1000px;
 }
 video {
   position: relative;
   width: 90%;
+}
+button {
+  /* height: 400px;
+  width: 100px; */
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 30%;
+  height: 40px;
 }
