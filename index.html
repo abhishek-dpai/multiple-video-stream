@@ -5,38 +5,19 @@
     <title> Stream Multiple URL </title>
     <link href="./style.css" rel="stylesheet">
 </head>
-
 <body>
+    <div class="container">
+
         <div class="box">
-
             <div class="row1">
-
                 <div class="video">
-                    <video id="video3" src="videos/2- Setting Up the Development Environment.mp4" controls>
-                </div>
-                <div class="video">
-
-                    <video controls
-                        poster="https://upload.wikimedia.org/wikipedia/commons/e/e8/Elephants_Dream_s5_both.jpg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
-                        <source src="https://archive.org/download/ElephantsDream/ed_hd.ogv" type="video/ogg">
-                        <source src="https://archive.org/download/ElephantsDream/ed_hd.avi" type="video/avi">
-                        Your browser doesn't support HTML5 video tag.
-                    </video>
-                </div>
-
-            </div>
-            <div class="row2">
-
-                <div class="video">
-
-                    <video src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+                    <video id="video101" src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
                         poster="https://scontent.fknu1-1.fna.fbcdn.net/v/t1.0-9/82436813_2089268554531473_6953977576108851200_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=JU88PfbUq_QAX_BkMKT&_nc_ht=scontent.fknu1-1.fna&oh=b4b27509bf6a037d832bf167cadc456a&oe=5FC2190E"
                         controls>
-
                 </div>
+            </div>
+            <div class="row2">
                 <div class="buttons">
-
                     <button onclick="getCurTime()" type="button">Get current time position</button><br>
                     <button onclick="setCurTime(5)" type="button">Set time position to 5 seconds</button><br>
                     <button onclick="setCurTime(10)" type="button">Set time position to 10 seconds</button><br>
@@ -46,23 +27,17 @@
                 </div>
             </div>
         </div>
-
-
+    </div>
     <script>
-
-        var vid = document.getElementById("video3");
+        var vid = document.getElementById("video101");
         function getCurTime() {
             console.log("get");
-
             alert(vid.currentTime);
         }
         function setCurTime(t) {
             console.log("set");
             vid.currentTime = t;
-
         }
     </script>
-
 </body>
-
 </html>
